@@ -1,42 +1,64 @@
+// javascript gjuhe programimi qe nderton aplikacione ne web.
+
 console.log('kledio');
 
-// variablat
-var emri;
+console.log('futboll')
 
-var notat = [4,5,6,7,8,9,10];
+// algoritmi
+// detyra, instruksione qe ekzekutohen hap pas hapi
 
-emri = 'variabli kledio';
+// nderto nje algoritem qe vendos moshen dhe tregon nese ja moshen e patentes ose jo
 
-console.log(emri);
+// mosha > 18 ->  printo Ok perndryshe duhen dhe x vite
 
-var numer1 = 5;
+// variabel eshte nje hapsire ne memorie te kompjuterit, ruan vlera ne memorie
 
-var numer2 = 10;
+let mosha = 19; 
 
-console.log(numer1 + numer2);
+// kushtet, nese
 
-// kushtet
-
-// var input = prompt('Ju lutem vendosni moshen');
-
-// if(input > 18) {
-//     console.log('Ju mund te aplikoni per patenten')
-// }
-// else if(input > 15 && input < 17){
-//     console.log('Ju mund te aplikoni pas gjimnazit')
-// }
-// else {
-//     console.log('Ju nuk mund te aplikoni per patenten')
-// }
-var notatPrint;
-for(var i = 0; i < notat.length; i++){
-    if(notat.length === i - 1){
-        notatPrint += `${notat[i]},`;
-    }
-    else{
-        notatPrint += `${notat[i]}`;
-    }
-    console.log(notat[i]);
+if(mosha >= 18) {
+    //ekezekutohet kur if eshte i vertete
+   console.log('mund ta besh pantenten');
+}
+else{
+    // perndryshe -> ekzekutohet vetem kur if eshte i pavertete
+    console.log('ti nuk mund ta besh patenten');
 }
 
-console.log(notatPrint);
+// nese
+// perndryshe
+// algoritem, variabli, kushtet if else
+
+// variabli eshte baraz 0 afishoje ne shkronje 'zero'
+// nese eshte 1 afishoje me 'nje'
+// pernryshe afishohe numrin 
+
+let numri = 2;
+
+if(numri === 0 ){
+    console.log('zero');
+}
+else if(numri===1){
+    console.log('nje')
+
+}
+else{
+    console.log(numri);
+}
+
+// variablie eshte > 6 dhe < 12 afisho miremengjes
+// variabli eshte >= 12 dhe <=16 afisho miredita
+// variabli eshte > 16 afisho mirembre
+
+let ora= 3;
+
+if(ora >0 && ora <12 ){
+    console.log('miremengjes');
+}
+else if (ora >=12 && ora <= 16){
+    console.log('miredita');
+}
+else if(ora > 16 && ora < 24){
+    console.log('Mirembrema');
+}
